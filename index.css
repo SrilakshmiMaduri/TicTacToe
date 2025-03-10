@@ -1,4 +1,4 @@
-.cell{
+/* .cell{
     width:100px;
     height: 100px;
     border:1px solid red;
@@ -29,4 +29,70 @@
 #restartBtn:hover{
     border:2px solid red;
     border-radius:8px;
+} */
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #f5819c, #38f496);
+    font-family: 'Arial', sans-serif;
+}
+
+#gameContainer {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#cellContainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px; 
+    margin: auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ff4d4d;
+    font-size: 50px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    transition: transform 0.2s ease-in-out;
+}
+
+.cell:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#restartBtn {
+    padding: 10px 20px;
+    border: none;
+    background: #ff4d4d;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#restartBtn:hover {
+    background: #ef2d2d;
 }
